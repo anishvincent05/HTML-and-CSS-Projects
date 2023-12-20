@@ -1,0 +1,26 @@
+/* Home Logo */
+#home-logo {font-family:"Lucida Handwriting";
+
+			}
+/* End Home Logo*/
+
+/* align page to center*/
+.center {text-align: center;
+}
+/* End align page to center*/
+
+/* image size*/
+.img { width:420px;
+height:320px;}
+/*End image size*/
+
+/* Navigation bar */
+#nav li {list-style-type: none;
+		font-size:20px;
+		display:inline;
+		padding:10px 10px;
+
+}
+#nav a{text-decoration: none;
+}
+/* End Navigation bar */
