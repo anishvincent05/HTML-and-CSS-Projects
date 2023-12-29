@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Basic HTML</title>
+		<title>The Space Station</title>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="./css/shared.css">
+		<link rel="stylesheet" href="./css/animations.css">
 	</head>
 	<body>
 		<!-- NAV -->
-		<div>
-			<div>
-				<ul>
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
 					<a href="#home" ><li>HOME</li></a>
 					<a href="#gallery" ><li>GALLARY</li></a>
 					<a href="#rsvp" ><li>RESERVATIONS</li></a>
@@ -19,24 +21,24 @@
 		
 		<!-- HOME -->
 		<div id="home">
-			<div>
-				<div>
-					<span>The Space station</span>
+			<div class="container" >
+				<div class="text-center">
+					<span class="head-main">The Space station</span>
 				</div>
 			</div>
 		</div>
 		<!-- END HOME -->
 		
 		<!-- GALLARY -->
-			<section>
-				<div id="gallery">
+			<section id="gallery">
+				<div class="container">
 					<h1>Gallery</h1>
-					<div>
+					<div class="flex-container">
 						<!-- PHOTO CONTAINER 1 -->
-						<div>
-							<div>
+						<div class="photo-container">
+							<div class="photo">
 								<img src="./img/1.jpg" alt="Star war space station">
-								<div>
+								<div class="photo-overlay">
 									
 									<h3>Click to Enlarge</h3>
 									<p>We have several space launches departing daily, book your flight </p>
@@ -45,10 +47,10 @@
 						</div>
 						<!-- END PHOTO CONTAINER 1-->
 						<!-- PHOTO CONTAINER 2-->
-						<div>
-							<div>
+						<div class="photo-container">
+							<div class="photo">
 								<img src="./img/2.jpg" alt="Graphical white space station">
-								<div>
+								<div class="photo-overlay">
 									<h3>Click to Enlarge</h3>
 									<p>We have several space launches departing daily, book your flight </p>
 								</div>
@@ -56,10 +58,10 @@
 						</div>
 						<!-- END PHOTO CONTAINER 2-->
 						<!-- PHOTO CONTAINER 3 -->
-						<div>
-							<div>
+						<div class="photo-container">
+							<div class="photo">
 								<img src="./img/3.jpg" alt="space station ">
-								<div>
+								<div class="photo-overlay">
 									<h3>Click to Enlarge</h3>
 									<p>We have several space launches departing daily, book your flight </p>
 								</div>
@@ -67,10 +69,10 @@
 						</div>
 						<!-- END PHOTO CONTAINER 3-->
 						<!-- PHOTO CONTAINER 4 -->
-						<div>
-							<div>
+						<div class="photo-container">
+							<div class="photo">
 							<img src="./img/4.jpg" alt="space station">
-								<div>
+								<div class="photo-overlay">
 									<h3>Click to Enlarge</h3>
 									<p>We have several space launches departing daily, book your flight </p>
 								</div>
@@ -78,10 +80,10 @@
 						</div>
 						<!-- END PHOTO CONTAINER 4-->
 						<!-- PHOTO CONTAINER 5 -->
-						<div>
-							<div>
+						<div class="photo-container">
+							<div class="photo">
 								<img src="./img/5.jpg" alt="satelite">
-								<div>
+								<div class="photo-overlay">
 									<h3>Click to Enlarge</h3>
 									<p>We have several space launches departing daily, book your flight </p>
 								</div>
@@ -89,10 +91,10 @@
 						</div>
 						<!-- END PHOTO CONTAINER 5-->
 						<!-- PHOTO CONTAINER 6 -->
-						<div>
-							<div>
+						<div class="photo-container">
+							<div class="photo">
 								<img src="./img/6.jpg" alt="satelite">
-								<div>
+								<div class="photo-overlay">
 									<h3>Click to Enlarge</h3>
 									<p>We have several space launches departing daily, book your flight </p>
 								</div>
@@ -100,10 +102,10 @@
 						</div>
 						<!-- END PHOTO CONTAINER 6-->
 						<!-- PHOTO CONTAINER 7 -->
-						<div>
-							<div>
+						<div class="photo-container">
+							<div class="photo">
 								<img src="./img/7.jpg" alt="Astronaut">
-								<div>
+								<div class="photo-overlay">
 									<h3>Click to Enlarge</h3>
 									<p>We have several space launches departing daily, book your flight </p>
 								</div>
@@ -111,10 +113,10 @@
 						</div>
 						<!-- END PHOTO CONTAINER 7-->
 						<!-- PHOTO CONTAINER 8 -->
-						<div>
-							<div>
+						<div class="photo-container">
+							<div class="photo">
 								<img src="./img/8.jpeg" alt="satelite">
-								<div>
+								<div class="photo-overlay">
 									<h3>Click to Enlarge</h3>
 									<p>We have several space launches departing daily, book your flight </p>
 								</div>
@@ -122,10 +124,10 @@
 						</div>
 						<!-- END PHOTO CONTAINER 8-->
 						<!-- PHOTO CONTAINER 9 -->
-						<div>
-							<div>
+						<div class="photo-container">
+							<div class="photo">
 								<img src="./img/9.jpg" alt="space station">
-								<div>
+								<div class="photo-overlay">
 									<h3>Click to Enlarge</h3>
 									<p>We have several space launches departing daily, book your flight </p>
 								</div>
@@ -138,38 +140,39 @@
 		<!-- END GALLARY -->
 		
 		<!-- RSVP -->
-			<section>
-				<div id="rsvp">
-					<div> 
-						<h1>Reservations</h1>
-						<div>
-							<h2><span>Your adventure is just around the moon.</span>
+			<section id="contact">
+				<div class="container">
+					<div class="heading-padding"> 
+						<h1 class="heading-padding">Reservations</h1>
+						<div class="reservation">
+							<h2>
+								<span>Your adventure is just around the moon.</span>
 								<br />Reserve your flight today!
-								</h2>
-								<p>
-									Please provide us with your basic contact information.
-								</p>
-								<div>
-									<form action="" method="post">
-										<input type="text" value="First Name">
-										<input type="text" value="Last Name">
-										<input type="text" value="Email Address">
-										<input type="text" value="Phone Number">
-										<div >
-											<label>Terms and Conditions</label>
-										</div>
-										<div>
-											<input type="submit" value="Submit">
-										</div>
-									</form>
-								</div>
+							</h2>
+							<p class="rsvp-text">
+								Please provide us with your basic contact information.
+							</p>
+							<div class="form-rsvp">
+								<form action="" method="post">
+									<input class="rsvp" type="text" value="First Name">
+									<input class="rsvp" type="text" value="Last Name">
+									<input class="rsvp" type="text" value="Email Address">
+									<input class="rsvp" type="text" value="Phone Number">
+									<div class="form-spacer">
+										<label>Terms and Conditions</label>
+									</div>
+									<div class="submit">
+										<input type="submit" value="Submit">
+									</div>
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 		<!-- END RSVP -->
 	<!-- FOOTER -->
-	<div>
+	<div id="footer">
 	 www.thespacestation.space &nbsp;|&nbsp; &copy; 2016
 	</div>
 	<!-- END FOOTER -->
