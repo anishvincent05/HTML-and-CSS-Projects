@@ -1,27 +1,241 @@
-/* Home Logo */
-#home-logo {font-family:"Lucida Handwriting";
-
-			}
-/* End Home Logo*/
-
-/* align page to center*/
-.center {text-align: center;
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #FAEED1;
+}
+/*-----------Nav bar-------------*/
+.nav {
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: #DED0B6;
+	width: 100%;
+	height: 100px;
+	z-index: 1;
+}
+.menu-container {
+	padding: 0;
+	width: 50%;
+	height: 100%;
+	
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+}
+.menu 
+{
+	padding: 0;
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	top: 40%;
+	width: 100%;
+	text-align: center;
+	
+}
+.menu a{
+	text-decoration: none;
+	padding: 0;
+	margin: 20px;
 }
 
-/* End align page to center*/
+.menu li{
+	list-style: none;
+	display: inline;
+	margin: 0px;
+	padding:20px 10px;
+	font-size: large;
+	background-color:#DED0B6 ;
+	transition-duration: .4s;
+	border-radius: 3px;
+	font-family:Comic Sans MS ;
+	color: black;
+	font-weight: 600;
+}
 
-/* image size*/
-.img { width:420px;
-height:320px;}
-/*End image size*/
-
-/* Navigation bar */
-#nav li {list-style-type: none;
-		font-size:20px;
-		display:inline;
-		padding:10px 10px;
+.menu li:hover {
+	background-color:#FDF7E4 ;
+}
+/*-----------End Nav bar-------------*/
+/*-----------Home-------------*/
+.home {
+	position: relative;
+	top:100px;
+	padding: 0;
+	height: 500px;
 
 }
-#nav a{text-decoration: none;
+.home-sub{
+	width: 50%;
+	text-align: center;
+	left: 50%;
+	position: relative;
+	transform: translatex(-50%);
+	
+	
 }
-/* End Navigation bar */
+#home-logo {
+	font-family:fantasy ;
+	word-spacing: 12px;
+	color:#354259;
+	font-size: 50px;
+}
+/*-----------End Home-------------*/
+/*-----------Menu------------*/
+.submenu-container {
+	position: relative;
+	border: 2px solid black;
+	top:50px;
+	background-color: #DED0B6;
+}
+.submenu-container1 {
+	text-align: center;
+	position: relative;
+	height: 80vh;
+	
+}
+.submenu-container1 h1{
+	font-size: 30px;
+	font-weight: 400;
+	font-family: Impact;
+	border: 3px solid black;
+	margin: 10px;
+}
+.submenu-container2{
+	display: grid;
+	grid-template-columns: auto auto;
+	position: relative;
+}
+.photo p {
+    font-weight: 300;
+    line-height:30px;
+    padding-bottom:15px;
+}
+.photo {
+    position: relative;
+    line-height: 0;
+    margin-bottom : 2em;
+    overflow:hidden;
+    border-radius: 8px;
+    padding: 1px;
+    border: 1px solid #021a40;
+    background-color: #ff0;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+	height: 100%;
+	
+}
+.photo-container {
+    text-align: center;
+    margin: 15px auto;
+    width: 300px;
+    height:169px;
+	position: relative;
+	
+}
+.photo-container img{
+    max-width: 100%;
+    width: 300px;
+    
+	
+}
+.photo-overlay {
+    color:#fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.5);
+
+}
+.white-head {
+    color: #C9BDAA;
+    margin-top: 5%;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+.photo-overlay{
+    opacity:0;
+    transition: opacity .1s;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.photo-overlay p{
+    width:100%;
+    height: 100%;
+    color:#fff;
+}
+.photo-overlay:hover {
+    opacity: 1;
+}
+.photo img{
+    transition: transform .5s;
+    transform-origin: 50% 50%;
+}
+.photo:hover img {
+    transform: scale(1.1)
+}
+/*-----------End Menu------------*/
+/*-----------Contact------------*/
+.contact-container {
+	position: relative;
+	top: 50px;
+	text-align: center;
+	
+}
+.contact-container1 {
+	width: 80vw;
+	border: 2px solid black;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #DED0B6;
+	
+}
+.contact-container1 h1 {
+	font-size: 30px;
+	font-weight: 400;
+	font-family: Impact;
+}
+.contact-container1 p {
+	font-size: 15px;
+	font-weight: 300;
+	font-family: Impact
+}
+.form input {
+	margin: 20px 20px ;
+}
+#submitbutton {
+	
+	width: 100px;
+	height: 50px;
+	border-radius: 10px;
+}
+#submitbutton:hover {
+	
+	width: 100px;
+	height: 50px;
+	border-radius: 10px;
+	background-color: hsl(204, 81%, 83%);
+}
+/*-----------End Contact------------*/
+/*---------------Footer-----------*/
+.footer {
+	position: relative;
+	top: 50px;
+	border-top: 2px solid black;
+	height: 100px;
+	background-color: #DED0B6;
+}
+.footer h2{
+	font-family: Brush Script MT;
+	font-size: 40px;
+	margin: 20px;
+}

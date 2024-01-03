@@ -5,11 +5,11 @@
 		<meta charser="utf-8">
 		<link rel="stylesheet" href="CSS/style.css">
 	</head>
-	<body class="center">
+	<body class = "body">
 		<!-- NAV -->
-		<nav id="nav">
-			<div>
-				<ul>
+		<nav class =" nav">
+			<div class = "menu-container">
+				<ul class="menu">
 					<a href="#home" ><li>Home</li></a>
 					<a href="#menu" ><li>Menu</li></a>
 					<a href="#contacts" ><li>Contacts</li></a>
@@ -18,8 +18,8 @@
 		</nav>
 		<!-- END NAV -->
 		<!-- Home -->
-		<div id="home">
-			<div>
+		<div class="home" id="home">
+			<div class="home-sub">
 				<div class=>
 					<h1 id="home-logo">Home Kitchen</h1><br>
 					<iframe width="420" height="315"
@@ -31,15 +31,15 @@
 		</div>
 		<!-- END HOME -->
 		<!-- Menu -->
-		<section>
-			<div id="menu">
+		<section id="menu" class="submenu-container">
+			<div  class="submenu-container1">
 				<h1>Menu</h1>
-				<div>
+				<div class="submenu-container2">
 					<!-- PHOTO CONTAINER 1 -->
-						<div>
-							<div >
+						<div class="photo-container">
+							<div class="photo">
 								<img src="./img/1.jpeg" alt="Noodles" class="img">
-								<div>
+								<div class="photo-overlay">
 									
 									<h3>Soy Sauce Fried Noodles</h3>
 									<p>Regular noodles mixed with soy sauce </p>
@@ -48,10 +48,10 @@
 						</div>
 					<!-- END PHOTO CONTAINER 1-->
 					<!-- PHOTO CONTAINER 2 -->
-						<div>
-							<div>
+						<div class="photo-container">
+							<div class="photo">
 								<img src="./img/2.jpeg" alt="Sandwich" class="img">
-								<div>
+								<div class="photo-overlay">
 									
 									<h3>Sandwich</h3>
 									<p>Slice of bread with spread butter </p>
@@ -60,10 +60,10 @@
 						</div>
 					<!-- END PHOTO CONTAINER 2-->
 					<!-- PHOTO CONTAINER 3 -->
-						<div>
-							<div>
+						<div class="photo-container">
+							<div class="photo">
 								<img src="./img/3.jpeg" alt="Poutine" class="img">
-								<div>
+								<div class="photo-overlay">
 									
 									<h3>Poutine</h3>
 									<p>Fries mixed with gravy </p>
@@ -72,10 +72,10 @@
 						</div>
 					<!-- END PHOTO CONTAINER 3-->
 					<!-- PHOTO CONTAINER 4 -->
-						<div>
-							<div>
+						<div class="photo-container">
+							<div class="photo">
 								<img src="./img/4.jpg" alt="Pancake" class="img">
-								<div>
+								<div class="photo-overlay">
 									
 									<h3>PanCake</h3>
 									<p>Made with flour,milk and egg </p>
@@ -84,10 +84,10 @@
 						</div>
 					<!-- END PHOTO CONTAINER 4-->
 					<!-- PHOTO CONTAINER 5 -->
-						<div>
-							<div>
+						<div class="photo-container">
+							<div class="photo">
 								<img src="./img/5.jpeg" alt="Burger" class="img">
-								<div>
+								<div class="photo-overlay">
 									
 									<h3>Meat Burger</h3>
 									<p>Meat paddy inside bun garnished with vegetables </p>
@@ -96,10 +96,10 @@
 						</div>
 					<!-- END PHOTO CONTAINER 5-->
 					<!-- PHOTO CONTAINER 6 -->
-						<div>
-							<div>
+						<div class="photo-container">
+							<div class="photo">
 								<img src="./img/6.jpeg" alt="Soup" class="img">
-								<div>
+								<div class="photo-overlay">
 									
 									<h3>Veg Soup</h3>
 									<p>Made with different chopped vegtables in flavorful broth </p>
@@ -113,17 +113,17 @@
 	
 		<!-- End Menu -->
 		<!-- Contacts -->
-		<section>
-			<div id="contacts">
-				<h3>Contact</h3>
+		<section class="contact-container">
+			<div id="contacts" class="contact-container1">
+				<h1>Contact</h1>
 				<p>Please leave your details</p>
 				<div>
-					<form action="" method="post">
+					<form action="" method="post" class="form">
 						<input type="text" value="First Name">
 						<input type="text" value="Last Name">
 						<input type="text" value="Email Address">
 						<div>
-							<input type="submit" value="Submit">
+							<input type="submit" value="Submit" id="submitbutton">
 						</div>
 					</form>
 				</div>
@@ -131,7 +131,7 @@
 		</section>
 		<!-- Contacts -->
 	</body>
-	<footer>
+	<footer class="footer">
 		<h2>Made by Anish Vincent</h2>
 	</footer>
 </html>
