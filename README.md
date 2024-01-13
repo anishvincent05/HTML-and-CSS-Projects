@@ -6,8 +6,8 @@ _Welcome to the HTML and CSS projects.This project is based on how to create web
 
 ## **Projects**
 
-*Resturant Site
-*Movie Theather Site
+* Resturant Site
+* Movie Theather Site
 
 ## **Resturant Site**
 
