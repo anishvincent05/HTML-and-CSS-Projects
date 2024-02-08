@@ -112,15 +112,27 @@
               </div>
             </div>
           </div>
-        
           <!---/Show Times-->
+          <!--jumbotron heading-->
+          <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+            <div class="container">
+              <h1 class="display-4 hidden-sm-down" style="color:#fff;font-family: roboto;font-weight: 900;text-transform: uppercase;">
+              Movie Deals</h1>
+              <p class="lead">Check out our monthly deals...</p>
+              <!--Movie deals-->
+              <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register">See our monthley movie deals!</button>
+            <!--/Mivie deals-->
+            </div>
+          </div>
+        <!--/jumbotron heading-->
+       
           <div class="text-center" id="deals">
             <form>
-              <h1 class="text-primary my-5">Sign ip for Movie Club Rewards!</h1>
+              <h1 class="text-primary my-5">Sign up for Movie Club Rewards!</h1>
               <div class="form-group">
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="button" class="btn btn-primary popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Top popover">Submit</button>
             </form>
           </div>
           <div class="container my-5">
@@ -139,6 +151,44 @@
               </li>
             </ul>
           </div>
+           <!--form model-->
+        <div class="modal" id="register" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Register to get movie deal</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+              <form>
+                <fieldset class="form-group row">
+                  <label  class="col-sm-2 col-form-label">First Name</label>
+                  <input type="text" class="form-control" id="firstname">
+                </fieldset>
+                <fieldset class="form-group row">
+                  <label  class="col-sm-2 col-form-label">lastname</label>
+                  <input type="text" class="form-control" id="lastname">
+                </fieldset>
+                <fieldset class="form-group row">
+                  <label  class="col-sm-2 col-form-label">Email</label>
+                  <input type="email" class="form-control" id="email">
+                </fieldset>
+                <fieldset class="form-group row">
+                  <label  class="col-sm-2 col-form-label">Passowrd</label>
+                  <input type="password" class="form-control" id="password">
+                </fieldset>
+              </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/form model-->
 
 
 
@@ -153,5 +203,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script>
+    $('.popover-dismiss').popover({
+  trigger: 'focus'
+});
+  </script>
+  
   </body>
 </html>
